@@ -55,7 +55,7 @@ function Login() {
               <p className={`${styles.parsed}`}>Password</p>
               <input
                 className={`${styles.inputSpace}`}
-                type="text"
+                type="password"
                 name="password"
                 value={attributes.password}
                 onChange={handleChange}
