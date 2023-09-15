@@ -1,0 +1,31 @@
+.inputSpace{
+    width: 31vw;
+    border-radius: 2vw;
+    margin-right: 24vw;
+    margin-left: 20vw;
+}
+
+@media (max-width: 991px){
+    .inputSpace{
+        width: 60%;
+        margin-right: 1%;
+    margin-left: 1%;
+    }
+}
+
+@media (max-width: 700px){
+    .inputSpace{
+        display: none;
+    }
+}
+
+@media (701px <= width <= 990px){
+    .inputSpace{
+        width: 25vw;
+        border-radius: 2vw;
+        margin-right: 24vw;
+        margin-left: 20vw;
+        padding: .3vw;
+        padding-left: .8vw;
+    }
+}

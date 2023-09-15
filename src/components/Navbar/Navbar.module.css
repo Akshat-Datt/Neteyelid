@@ -1,0 +1,102 @@
+.project{
+    margin-left: .2vw;
+    margin-right: 4vw;
+    font-size: 2vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-style:italic;
+}
+.contained{
+    padding: 0vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.logo{
+    font-size: 2vw;
+    margin-bottom: .5vw;
+}
+.listed{
+    right: 0vw;
+    display: flex;
+    flex-direction: row;
+}
+.listedAgain{
+    right: 0vw;
+    display: flex;
+    flex-direction: row;
+}
+.backend{
+    font-size: 1.2vw;
+    width: 4.4vw;
+    margin-right: .5vw;
+}
+.navbar{
+    padding: 0vw;
+    margin: 0vw;
+}
+.project{
+    margin-left: 0vw;
+}
+
+
+
+@media (max-width: 700px){
+    .contained{
+        justify-content: space-between;
+    }
+    .listedAgain{
+        display: none;
+    }
+    .collapsed{
+        font-size: 2vw;
+        margin-left: 18vw;
+        margin-right: 3vw;
+    }
+    .colBut{
+        font-size: 2vw;
+    }
+    .project{
+        margin-right: 60vw;
+    }
+    .logo{
+        margin-left: 3vw;
+        margin-right: .7vw;
+    }
+    .popped{
+        width: 30vw;
+        margin-left: auto;
+    }
+    .listed{
+        flex-direction: column;
+    }
+    .backend{
+        margin-left: 20vw;
+    }
+}
+
+@media(min-width: 701px){
+    .collapsed{
+        display: none;
+    }
+}
+
+@media (701px <= width <= 990px){
+    .contained{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .project{
+        margin-right: 8vw;
+    }
+    .logo{
+        margin-left: 2vw;
+        margin-right: .5vw;
+    }
+}

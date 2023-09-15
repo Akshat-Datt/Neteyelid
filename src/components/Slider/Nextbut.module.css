@@ -1,0 +1,27 @@
+.but{
+    position: absolute;
+    margin-top: 15vw;
+    margin-left: 91.5vw;
+    border: 0vw;
+}
+
+.buttoned{
+    border: 0vw;
+    color: rgb(255, 255, 255);
+    background: none;
+    font-size: 3vw;
+}
+
+@media (701px <= width <= 990px){
+    .but{
+        margin-left:92vw;
+        margin-top: 18vh;
+    }
+}
+
+@media (max-width: 700px){
+    .but{
+        margin-left:92vw;
+        margin-top: 10.5vh;
+    }
+}

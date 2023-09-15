@@ -1,0 +1,97 @@
+.wrapper{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgb(248, 228, 185);
+    opacity: 50%;
+}
+
+.container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vw;
+    font-family: 'Inter', sans-serif;
+}
+
+.mapped{
+    width: 53vw;
+    height: 70vh;
+    margin-top: 4vw;
+    object-fit: cover;
+}
+
+.cross{
+    position: absolute;
+    border: 0vw;
+    font-size: larger;
+    color: red;
+    margin-left: 53vw;
+    background-color: rgb(235, 217, 180);
+}
+
+.cloud{
+    position: absolute;
+    border: 0vw;
+    font-size: larger;
+    color: black;
+    margin-top: 82vh;
+    background-color: white;
+}
+
+.para{
+    font-family: 'Inter', sans-serif;
+    font-size: 1vw;
+}
+
+@media (701px <= width <= 990px){
+    .container{
+        width: 80vw;
+        height: 70vh;
+    }
+    .mapped{
+        width: 68vw;
+        height: 55vh;
+        margin-top: 6vh;
+        object-fit: cover;
+    }
+    .cross{
+        margin-left: 77%;
+    }
+    .cloud{
+        margin-top: 63vh;
+    }
+    .para{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 78vw;
+        height: 60vh;
+    }
+    .mapped{
+        width: 58vw;
+        height: 62%;
+        margin-top: 10vh;
+        object-fit: cover;
+    }
+    .cross{
+        margin-left: 58vw;
+        font-size: medium;
+    }
+    .cloud{
+        margin-top: 53vh;
+        font-size: medium;
+    }
+    .para{
+        font-size: 3vw;
+    }
+}

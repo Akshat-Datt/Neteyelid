@@ -1,0 +1,19 @@
+.show{
+    margin-top: 74.5vh;
+    width: 100vw;
+}
+
+@media (701px <= width <= 990px){
+    .show{
+        width: 100%;
+        margin-top: 40vh;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .show{
+        width: 100%;
+        margin-top: 27vh;
+    }
+}

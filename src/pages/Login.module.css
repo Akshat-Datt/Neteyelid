@@ -1,0 +1,73 @@
+.formed{
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    padding: 5vw;
+    padding-top: 1.8vw;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+}
+
+
+.inliner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.particular{
+    margin-top: 1vw;
+}
+
+.parsed{
+    text-align: start;
+    margin-left: 2.4vw;
+}
+
+.inputSpace{
+    width: 45vw;
+    border-radius: .3vw;
+    border: .1vw solid;
+    padding: .5vw;
+}
+
+.formSpace{
+    margin-top: 4.8vh;
+}
+
+.button{
+    margin-top: 2.5vw;
+}
+
+.but{
+    width: 45vw;
+    padding: .8vw;
+    border: none;
+    border-radius: .3vw;
+    color: white;
+    background-color: black;
+}
+
+@media(max-width:700px){
+
+    .formed{
+        height: 33vh;
+    }
+    .formSpace{
+        margin-top: 20vh;
+    }
+}
+
+@media(701px <= width <=991px){
+    .formed{
+        height: 27vh;
+    }
+    .formSpace{
+        padding-top: 15vh;
+    }
+}
