@@ -9,7 +9,20 @@ function Signup() {
 
   const handleSubmit = async(e)=>{
     e.preventDefault();
-    const response = await fetch(process.env.REACT_APP_SERVER+"/api/user", 
+    if(attributes.first.length < 4){
+      alert("First name should be 4 characters");
+    }
+    else if(attributes.last.length < 3){
+      alert("Last name should be 5 characters");
+    }
+    else if(attributes.user.length < 5){
+      alert("Username should be 5 characters");
+    }
+    else if(attributes.last.length < 6){
+      alert("Password should be 6 characters");
+    }
+    else{
+      const response = await fetch(process.env.REACT_APP_SERVER+"/api/user", 
       {
         method: 'POST',
         headers: {
@@ -26,6 +39,7 @@ function Signup() {
       if(!json.errors){
         navigate("/");
       }
+    }
   } 
 
   const onChange=(e)=>{
